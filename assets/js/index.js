@@ -17,19 +17,12 @@ $(document).ready(function () {
     var scrollTop = $(this).scrollTop();
     var header = $("header");
     var topBar = $(".top_bar");
-
-    // Toggle fixed_header class on scroll
     header.toggleClass("fixed_header", scrollTop > 0);
-
-    // Hide/show top bar based on scroll direction
     if (scrollTop > lastScrollTop && scrollTop > 50) {
-      // Scrolling down
       topBar.addClass("hide");
     } else {
-      // Scrolling up
       topBar.removeClass("hide");
     }
-
     lastScrollTop = scrollTop;
   });
 });
