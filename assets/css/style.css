@@ -247,7 +247,7 @@ img {
 
 /* Section Heading CSS Start */
 .section_heading {
-    color: #fff;
+    color: #0c0c11;
     font-size: 3rem;
     letter-spacing: 0.3px;
     text-transform: capitalize;
@@ -730,5 +730,46 @@ body .slick-track {
 .newsletter_btn {
     transition: 0.8s all ease-in-out;
 }
-
+.newsletter_btm_txt  ul li {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
+.newsletter_btm_txt  ul li::marker {
+color: #ff0808;
+}
 /* Newsletter CSS End */
+
+/* FAQ CSS Start */
+.accordion-button ,.accordion-button:not(.collapsed) {
+    background: #ff0808;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+
+.accordion-button::after {
+    filter: brightness(0) invert(1); /* Makes the default icon white */
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1); /* Keep it white when expanded too */
+}
+.faq_img_outer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.faq_img {
+    height: 100%;
+    width: 100%;
+}
+.faq_img_outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+/* FAQ CSS End */
