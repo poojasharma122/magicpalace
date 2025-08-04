@@ -9,15 +9,32 @@ $(document).ready(function () {
 });
 // Toggle Menu Functionaliy End
 
-
 // Header Scroll JS Start
 $(document).ready(function () {
+  var lastScrollTop = 0;
+
   $(window).scroll(function () {
+    var scrollTop = $(this).scrollTop();
     var header = $("header");
-    header.toggleClass("fixed_header", $(window).scrollTop() > 0);
+    var topBar = $(".top_bar");
+
+    // Toggle fixed_header class on scroll
+    header.toggleClass("fixed_header", scrollTop > 0);
+
+    // Hide/show top bar based on scroll direction
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+      // Scrolling down
+      topBar.addClass("hide");
+    } else {
+      // Scrolling up
+      topBar.removeClass("hide");
+    }
+
+    lastScrollTop = scrollTop;
   });
 });
 // Header Scroll JS End
+
 
 // AOS JS Start
 AOS.init({
@@ -33,10 +50,10 @@ $('.single_item_slider').slick({
   speed: 300,
   autoplay: true,
   prevArrow: `<button class="slick-prev custom-arrow custom-prev" aria-label="Previous slide">
-				 <svg  viewBox="0 0 32 72" xmlns="http://www.w3.org/2000/svg"><path stroke="#ffc723" stroke-width="1.5" d="M31 71L1 35 31 1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+				 <svg  viewBox="0 0 32 72" xmlns="http://www.w3.org/2000/svg"><path stroke="#ff0808" stroke-width="1.5" d="M31 71L1 35 31 1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 				</button>`,
   nextArrow: `<button class="slick-next custom-arrow custom-next" aria-label="Next slide">
-				 <svg  viewBox="0 0 32 72" xmlns="http://www.w3.org/2000/svg"><path stroke="#ffc723" stroke-width="1.5" d="M1 71l30-36L1 1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+				 <svg  viewBox="0 0 32 72" xmlns="http://www.w3.org/2000/svg"><path stroke="#ff0808" stroke-width="1.5" d="M1 71l30-36L1 1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 				</button>`
 });
 // Slider JS End
