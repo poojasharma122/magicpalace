@@ -260,9 +260,11 @@ span.theme {
 .bold {
     font-weight: 600;
 }
-.bg_theme{
+
+.bg_theme {
     background-color: #ff0808;
 }
+
 .bg_dark {
     background-color: #000;
 }
@@ -276,7 +278,7 @@ span.theme {
 }
 
 .text_theme {
-    color:  #ff0808;
+    color: #ff0808;
 }
 
 .text_dark {
@@ -384,6 +386,7 @@ span.theme {
     width: 100%;
     fill: #fff;
 }
+
 .sticky-header {
     position: sticky;
     top: 0;
@@ -468,7 +471,7 @@ span.theme {
     left: 0;
     height: 1.5px;
     width: 100%;
-    background-color:#ff0808;
+    background-color: #ff0808;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease-out;
@@ -503,9 +506,11 @@ span.theme {
 .slick-list.draggable {
     height: 43.75rem;
 }
+
 body .slick-track {
     height: 100%;
 }
+
 .banner_slides {
     height: 100%;
     margin: 0 auto;
@@ -566,19 +571,23 @@ body .slick-track {
     opacity: 1;
     transform: scale(1.05);
 }
+
 .home_banner .slick-next {
     right: 50px;
 }
+
 .home_banner .slick-prev {
     left: -10px;
     z-index: 99;
 }
+
 .banner_slide_content h1 {
     font-size: 4rem;
     max-width: 50rem;
     line-height: 1.2;
     font-weight: 600;
 }
+
 /* Home Category Slider CSS End */
 
 
@@ -599,28 +608,8 @@ body .slick-track {
     position: relative;
     overflow: hidden;
 }
-.common_overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255 8 8/30%);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1.25rem;
-    box-sizing: border-box;
-    text-align: center;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.5s ease;
-    transform-origin: center;
-}
-.img_part_outer:hover .common_overlay {
-    transform: translate(-50%, -50%) scale(1);
-}
+
+
 
 .img_part {
     height: 100%;
@@ -640,5 +629,53 @@ body .slick-track {
     font-size: 1.1rem;
 }
 
+.common_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:1000px; 
+    height: 1000px; 
+    background-color: rgba(255 8 8/20%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.8s ease, border-radius 0.3s ease;
+    transform-origin: center;
+    border-radius: 50%;
+    overflow: hidden;
+    pointer-events: none; /* Optional: Prevent overlay from blocking hover */
+}
 
+.img_part_outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
+.home_page_cards_img_outer {
+    position: relative;
+    overflow: hidden;
+    height: 25rem;
+}
+.home_page_cards_img {
+    height: 100%;
+    width: 100%;
+}
+.home_page_cards_content {
+    padding: 1.25rem 0;
+}
+.home_page_cards_img_outer:hover .common_overlay {
+    transform: translate(-50%, -50%) scale(1);
+}
 /* Home After Banner CSS End */
+
+
+/* Home Cards CSS Start */
+.home_cards_sec{
+    background-image: url(../images/sec_bg1.png);
+    background-color: rgba(255 8 8/10%);
+    background-blend-mode: multiply;
+}
