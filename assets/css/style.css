@@ -323,7 +323,7 @@ span.theme {
     position: absolute;
     border-radius: 50%;
     z-index: -1;
-    background-color: #c09342;
+    background-color: #ff0808;
     transition: 1.5s ease;
 }
 
@@ -694,23 +694,23 @@ body .slick-track {
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid #432818;
+    border-bottom: 1px solid #ff0808;
     padding: 0.625rem;
-    color: #432818;
+    color: #fff;
     font-weight: 1.2rem;
 }
 
 .newsletter-wrap input::placeholder {
-    color: #432818;
+    color: #fff;
     opacity: 1;
 }
 
 .newsletter-wrap input::-ms-input-placeholder {
-    color: #432818;
+    color: #fff;
 }
 
 .newsletter-wrap p {
-    color: #432818;
+    color: #ffff;
     font-weight: 500;
     font-size: 1.2rem;
 }
