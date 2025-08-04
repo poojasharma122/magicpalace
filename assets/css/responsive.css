@@ -1,0 +1,362 @@
+@media screen and (max-width:1399px) {}
+
+
+@media screen and (max-width:1199px) {}
+
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+
+    .footer-links,
+    .footer-contact {
+        padding-left: 2.75rem;
+    }
+
+    .footer-top h5 {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 991px) {
+    .navigation-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        background-color: #102b2a;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        z-index: 100;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .menuToggle .navigation-menu {
+        transform: translateX(0);
+        justify-content: flex-start;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+
+    }
+
+    .menu-toggle-btn {
+        display: block;
+    }
+
+    .menu-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        text-align: end;
+        z-index: 55;
+        font-size: 21px;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .footer-logo a {
+        width: 13.625rem;
+    }
+
+    .footer-links,
+    .footer-contact {
+        padding-left: 1.75rem;
+    }
+
+    .footer-top h4 {
+        font-size: 1.6rem;
+    }
+
+    .home_banner_img {
+        height: 25rem;
+    }
+
+    .home_banner_sec {
+        margin-top: 1.5rem;
+    }
+
+    .home_banner_content {
+        padding: 2rem 0 0 0;
+    }
+
+    .home_featured_img_outer {
+        height: 23rem;
+    }
+
+    .bar_card_img_outer {
+        margin-bottom: 1.875rem;
+    }
+
+    .bar_card_content a h3 {
+        font-size: 1.6rem;
+    }
+
+    .section_heading {
+        font-size: 2.5rem;
+    }
+    .home_own_sports_content {
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo logo"
+            "links contact";
+    }
+
+    .footer-logo {
+        grid-area: logo;
+    }
+
+    .footer-links {
+        grid-area: links;
+    }
+
+    .footer-contact {
+        grid-area: contact;
+    }
+
+    .footer-links,
+    .footer-contact {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: center;
+    }
+
+    .contact_page_form form {
+        max-width: 100%;
+    }
+
+    .contact_page_form {
+        padding-top: 3.5rem;
+    }
+
+    .home_banner_content h1 {
+        font-size: 2.2rem;
+    }
+
+    .home_explore_content h4 {
+        font-size: 1.7rem;
+    }
+
+    .home_why_us_content h4 {
+        margin-bottom: 0.625rem;
+    }
+
+    .home_why_us_img_outer {
+        height: 16.75rem;
+    }
+
+    .home_featured_img_outer {
+        height: 20rem;
+    }
+
+    .banner_content h1 {
+        font-size: 2.5rem;
+    }
+
+    .sub_banner {
+        height: 30.875rem;
+    }
+
+    .bar_card_img_outer {
+        height: 20rem;
+    }
+
+    .home_own_sports_img_outer {
+        height: 21.25rem;
+        margin-bottom: 1.875rem;
+    }
+    .blog_cards_btn_wrap {
+        text-align: left;
+    }
+    .blog_image_txt h1 {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+}
+
+
+
+
+@media screen and (max-width:575px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "links"
+            "contact";
+    }
+
+    .brand-container a,
+    .footer-logo a {
+        width: 12.75rem;
+    }
+
+    .footer-links,
+    .footer-contact {
+        border-top: 1px solid rgb(192 147 66/30%);
+        padding-top: 1.25rem;
+    }
+
+    .home_banner_content h1 {
+        font-size: 2rem;
+    }
+
+    .home_banner_content h3 {
+        font-size: 1.5rem;
+    }
+
+    .section_heading {
+        font-size: 2.3rem;
+        line-height: 1.4;
+    }
+
+    .home_explore_cards {
+        height: 20rem;
+    }
+
+    .home_why_us_content h4 {
+        font-size: 1.6rem;
+    }
+
+    .home_own_sports_img_outer {
+        height: 20.25rem;
+        margin-bottom: 2.25rem;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .banner_content h1 {
+        font-size: 2.2rem;
+    }
+
+    .sub_banner {
+        height: 26.875rem;
+    }
+
+    .home_why_cards {
+        padding: 1rem;
+    }
+
+    .bar_cards {
+        margin-bottom: 2.75rem;
+    }
+
+    .pt-5 {
+        padding-top: 2rem !important;
+    }
+
+    .pb-5 {
+        padding-bottom: 2rem !important;
+    }
+    .blog_image_txt h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .home_banner_img {
+        height: 20rem;
+    }
+
+    .home_banner_content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home_banner_content h3 {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    .home_banner_content p {
+        font-size: 1rem;
+    }
+
+    .brand-container a,
+    .footer-logo a {
+        width: 11.75rem;
+    }
+
+    .section_heading {
+        font-size: 1.8rem;
+    }
+
+    .home_explore_content h4 {
+        font-size: 1.5rem;
+    }
+
+    .home_why_us_img_outer {
+        height: 15.75rem;
+    }
+
+    .butn {
+        padding: 0.625rem 1.25rem;
+        line-height: 1.4;
+    }
+
+    .newsletter-wrap p {
+        font-size: 1rem;
+    }
+
+    .home_own_sports_img_outer {
+        height: 16.25rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
+    .banner_content h1 {
+        font-size: 1.8rem;
+    }
+
+    .sub_banner {
+        height: 22.875rem;
+    }
+
+    .bar_card_img_outer {
+        height: 17rem;
+    }
+    .blog_card_butn {
+        font-size: 1rem;
+    }
+    .blog_card_title h5 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .contact_page_content_info h3 svg, .contact_page_form h3 svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .blog_image_txt h1 {
+        font-size: 1.2rem;
+    }
+}
